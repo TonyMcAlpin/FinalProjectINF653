@@ -2,14 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-const cors = require('cors');
 
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn')
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 3000;
 
 
 // connect to Mongodb
