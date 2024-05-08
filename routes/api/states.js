@@ -4,7 +4,7 @@ const path = require('path');
 const statesController = require('../../controllers/statesController');
 
 
-// Route handlers
+// Define route handlers
 router.route('/')
     .get(statesController.getAllStates)
     //Used to add state to mongoDB only
